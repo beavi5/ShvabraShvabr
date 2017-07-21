@@ -37,13 +37,17 @@
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/category" />
+                    app:srcCompat="@drawable/category"
+                    android:layout_marginLeft="0dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp" />
 
                 <TextView
                     android:id="@+id/postCategories"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginRight="8dp"
                     android:ellipsize="end"
                     android:maxLines="1"
@@ -51,7 +55,9 @@
                     android:text="Categories"
                     app:layout_constraintLeft_toRightOf="@+id/imageView"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:layout_editor_absoluteY="0dp" />
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="0dp" />
             </android.support.constraint.ConstraintLayout>
 
             <WebView
